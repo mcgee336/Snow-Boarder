@@ -1489,6 +1489,7 @@ GameObject:
   - component: {fileID: 1898363536}
   - component: {fileID: 1898363540}
   - component: {fileID: 1898363541}
+  - component: {fileID: 1898363542}
   m_Layer: 0
   m_Name: spr.SnowBoarder
   m_TagString: Untagged
@@ -1509,8 +1510,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_LinearDrag: 0.5
+  m_AngularDrag: 10
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -1610,6 +1611,19 @@ CircleCollider2D:
   m_Offset: {x: 0.64, y: 0.92}
   serializedVersion: 2
   m_Radius: 0.39
+--- !u!114 &1898363542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898363535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55279a28cb28e2748a0b3a1ba2d74d57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fltorqueAmount: 5
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
