@@ -1570,6 +1570,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de3e1b72d790bda41ac08deaeb1dd384, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  psfinishEffect: {fileID: 1981331526}
   flloadDelay: 1
 --- !u!1 &1873584334
 GameObject:
@@ -1816,6 +1817,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab149d0ecbfb2e64796654bbd48983cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pscrashEffect: {fileID: 2105333147}
   flloadDelay: 0.5
 --- !u!1 &1981331523
 GameObject:
@@ -1891,7 +1893,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 50
   m_RenderMode: 0
   m_MeshDistribution: 0
   m_SortMode: 0
@@ -1939,7 +1941,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -6803,7 +6805,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 20
+  m_SortingOrder: 50
   m_RenderMode: 0
   m_MeshDistribution: 0
   m_SortMode: 0
@@ -6851,7 +6853,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
