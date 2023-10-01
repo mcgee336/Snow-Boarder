@@ -12,6 +12,7 @@ public class CrashDetector : MonoBehaviour
     {
         if(other.tag == "Ground")
         {
+            FindObjectOfType<PlayerController>().DisableControls();
             pscrashEffect.Play();
             GetComponent<AudioSource>().PlayOneShot(sfxcrashSFX);
             Invoke("ReloadScene", flloadDelay);

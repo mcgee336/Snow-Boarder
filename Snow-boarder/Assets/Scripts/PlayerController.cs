@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     
     Rigidbody2D rbrb2d;
     SurfaceEffector2D surfaceEffector2D;
+    bool bolcanMove = true;
     void Start()
     {
        rbrb2d =  GetComponent<Rigidbody2D>();
@@ -21,8 +22,16 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        RotatePlayer();
-        RespondToBoost();
+        if (bolcanMove)
+        {
+            RotatePlayer();
+            RespondToBoost();
+        }
+    }
+
+    public void DisableControls()
+    {
+        bolcanMove = false;
     }
 
      void RespondToBoost()
